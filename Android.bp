@@ -391,13 +391,6 @@ dex_import {
 }
 
 dex_import {
-	name: "com.android.hotwordenrollment.common.util",
-	owner: "xiaomi",
-	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "com.qti.dpmframework",
 	owner: "xiaomi",
 	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
@@ -910,15 +903,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "c2_manifest_vendor",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_android.hardware.drm@1.3-service.widevine",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
@@ -1116,17 +1100,3 @@ prebuilt_etc_xml {
 	soc_specific: true,
 }
 
-prebuilt_hidl_interfaces {
-    name: "hidl_embmssl_interface",
-    interfaces: [
-        "vendor.qti.hardware.embmssl@1.0::IEmbms",
-        "vendor.qti.hardware.embmssl@1.1::IEmbms",
-    ],
-}
-
-prebuilt_hidl_interfaces {
-    name: "hidl_netperftuner_interface",
-    interfaces: [
-        "vendor.qti.hardware.wigig.netperftuner@1.0::INetPerfTuner",
-    ],
-}
